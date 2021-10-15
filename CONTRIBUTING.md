@@ -68,3 +68,33 @@ git push origin <YOUR-NEW-BRANCH>
 10. Once the pull request is approved and merged, you can pull the changes from upstream to your local repository and delete your extra branch(es).
 
 Happy Coding!
+
+## Before Submitting a PR
+
+<em>Please do this everytime you submit a PR</em>
+
+1. Sync your fork to keep it up-to-date with the upstream repository following the next commands or this [tutorial](https://help.github.com/articles/syncing-a-fork/). First fetch the upstream repo and its commits -commits will be stored on your local fork- and then merge changes from upstream to your local:
+
+   ```
+   $ git fetch upstream
+   $ git merge upstream/master
+   ```
+
+2. Check if your changes are correct and don't break the website render by typing `npm run start`.
+3. Commit the files you have changed, type:
+
+   ```
+   $ git add -A
+   $ git commit -m "add a message to your commit"
+   $ git push
+   ```
+
+4. Before submitting the PR, make sure to run `npm run format` on your project-directory to make the code properly formatted.
+5. Commit to your repository at your github account and create a new PR. Click the _Pull Request_ tab on your fork page and then click the green button _New Pull Request_.
+
+### PR Format
+
+_The Pull-Request should contain the following information._
+
+1. Fix: #issue_number
+2. Feature Added/Changed
