@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "sw_backend"
 include ':app'
+include ':sw_library'
